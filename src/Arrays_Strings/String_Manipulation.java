@@ -29,13 +29,14 @@ public class String_Manipulation {
                 index--;
             }
         }
-        return s.toString();
+        return new String(s);
 
     }
 
     public static void main(String[] args) {
          int trueLength = 13;
          String str = "Mr John Smith    ";
+         //str = str.replaceAll("\\s","%20");
          char[] s = str.toCharArray();
          String output = replaceSpaces(s,trueLength);
          System.out.println(output);
